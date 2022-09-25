@@ -1,9 +1,13 @@
 import React from 'react'
-
+import { useParams } from 'react-router-dom';
 export default function About() {
+   // useParams parameter lakar dega 
+  // UseMatch
+  
+  let {subId } = useParams();   
   return (
-    <div className='App'>
-    <h1>About</h1>
+    <div>
+    <h1>{subId}</h1>
   </div>
   )
 }
